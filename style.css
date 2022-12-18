@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+body {
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+    background-image: url("https://media.discordapp.net/attachments/881615461962362933/891863679669268530/image0.gif");
+}    
+
+h1{
+    font-size: 2rem;
+    font-family: Jua;
+    color:violet;
+    text-align: center;
+}   
+
+p{
+  text-align: center; 
+  font-size: 1rem;
+}
