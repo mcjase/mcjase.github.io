@@ -1,19 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 body {
   
-  background-repeat: no-repeat;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("bg.jpeg");
+  height: 100vh;
+    width: 100%;
   background-size: cover;
-    background-image: url("https://media.discordapp.net/attachments/881615461962362933/891863679669268530/image0.gif");
-}    
-
+  background-position: center;
+  background-repeat: no-repeat;
+}
+    
+*{
+  margin:0;
+  padding:0;
+  font-family: Jua;
+  color: white;
+}
+.logo{
+  border-radius: 50px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
 h1{
-    font-size: 2rem;
-    font-family: Jua;
-    color:violet;
+    font-size: 2rem;    
     text-align: center;
 }   
 
 p{
   text-align: center; 
-  font-size: 1rem;
+  font-size: 20px;
+}
+
+
+
+.socials {
+	justify-content: center;
+	align-items: center;
+	text-align: center
 }
