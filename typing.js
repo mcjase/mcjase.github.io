@@ -1,7 +1,7 @@
 let first = document.getElementById("typing");
 let after = document.getElementById("typing_after");
-let first_txt = "jase";
-let after_txt = "#1970";
+let first_txt = "mc";
+let after_txt = "jase";
 let i = 0;
 let speed = 100;
 
