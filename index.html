@@ -1,7 +1,3 @@
-<!--
-Thanks to Vili (https://vili.dev)
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,34 +6,57 @@ Thanks to Vili (https://vili.dev)
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#e802ca">
     <meta name="description" content="Jase's website.">
-    <meta name="keywords" content="Jase, mcjase, Jasper,jase. Jase's profile card, Jase's card, Jase's profile, Jase's github, Jase's github profile, Jase's github card, Jase's github profile card, Jase's github profile card">
-    <meta name="author" content="Jase">
+    <meta name="keywords" content=>
     <meta content="https://avatars.githubusercontent.com/u/118633269?v=4" property="og:image" />
     <title>Jase - Welcome</title>
-    <link crossorigin="anonymous"
-            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
-            integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" rel="stylesheet">
-    <script crossorigin="anonymous" src="https://kit.fontawesome.com/f5b605371d.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://cdn.discordapp.com/avatars/919303630031573022/c74755b9d2f1a6bac3ea3bd0c2aacd00.png" type="image/png" sizes="16x16">
+    
     <script src="typing.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="rainbow" id="typing"></h1>
-        <p class="rainbow" id="typing_after"></p>
-        <div class="socials">
-           <a href="https://github.com/mcjase" target="_blank" title="Github url"><i class="fab fa-github"></i></a>
-            <a href="https://steamcommunity.com/profiles/76561199416022575/" target="_blank" title="Steam url"><i class="fab fa-steam"></i></a>
-            <a href="https://discord.com/users/919303630031573022" target="_blank" title="Github url"><i class="fab fa-discord"></i></a>
+    <header>
+        <img src="https://avatars.githubusercontent.com/u/118633269?v=4" alt="Logo" class="logo">
+    </header>
+    <main>
+        <section id="home">
+            <h1 class="rainbow bounce" id="typing"></h1>
+            <p class="rainbow bounce" id="typing_after"></p>
+            <div class="socials">
+                <a href="https://github.com/mcjase" target="_blank" title="Github url">GitHub</a>
+                <a href="https://steamcommunity.com/profiles/76561199416022575/" target="_blank" title="Steam url">Steam</a>
+                <a href="https://discord.com/users/919303630031573022" target="_blank" title="Discord url">Discord</a>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my website! I'm Jase, i'm a charmer of women and a pro Counter Strike player and I like coding.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <marquee behavior="scroll" direction="left">Check out my latest projects on GitHub!</marquee>
+        </section>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Here is some more information about me!</p>
         </div>
     </div>
-    <div>
-        <audio autoplay id="audio">
-            <source src="NXVAMANE FRESH PHONK.mp3" type="audio/mpeg">
-            
-        </audio>
-        <script defer>document.getElementById("audio").volume = 0.04;</script>
-    </div>
+    <script>
+        function playAudio() {
+            document.getElementById('audio').play();
+            document.body.style.backgroundColor = '#000000'; // Change background color to black
+        }
+        function pauseAudio() {
+            document.getElementById('audio').pause();
+            document.body.style.backgroundColor = ''; // Reset background color
+        }
+        function openModal() {
+            document.getElementById('modal').style.display = 'block';
+        }
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
