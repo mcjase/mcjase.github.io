@@ -1,62 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#e802ca">
-    <meta name="description" content="Jase's website.">
-    <meta name="keywords" content=>
-    <meta content="https://avatars.githubusercontent.com/u/118633269?v=4" property="og:image" />
-    <title>Jase - Welcome</title>
-    
-    <script src="typing.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <img src="https://avatars.githubusercontent.com/u/118633269?v=4" alt="Logo" class="logo">
-    </header>
-    <main>
-        <section id="home">
-            <h1 class="rainbow bounce" id="typing"></h1>
-            <p class="rainbow bounce" id="typing_after"></p>
-            <div class="socials">
-                <a href="https://github.com/mcjase" target="_blank" title="Github url">GitHub</a>
-                <a href="https://steamcommunity.com/profiles/76561199416022575/" target="_blank" title="Steam url">Steam</a>
-                <a href="https://discord.com/users/919303630031573022" target="_blank" title="Discord url">Discord</a>
-            </div>
-        </section>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to my website! I'm Jase, i'm a charmer of women and a pro Counter Strike player and I like coding.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <marquee behavior="scroll" direction="left">Check out my latest projects on GitHub!</marquee>
-        </section>
-    </main>
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <p>Here is some more information about me!</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#e802ca" />
+        <meta name="description" content="Jase's website." />
+        <meta name="keywords" content="" />
+        <meta
+            content="https://avatars.githubusercontent.com/u/118633269?v=4"
+            property="og:image"
+        />
+        <title>Jase</title>
+
+        <script src="post.js" defer></script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <noscript> JS IS DISABLED, THIS SITE WON'T WORK </noscript>
+        <div id="pre">
+            <button id="enter-button" onclick="enter()">Enter</button>
         </div>
-    </div>
-    <script>
-        function playAudio() {
-            document.getElementById('audio').play();
-            document.body.style.backgroundColor = '#000000'; // Change background color to black
-        }
-        function pauseAudio() {
-            document.getElementById('audio').pause();
-            document.body.style.backgroundColor = ''; // Reset background color
-        }
-        function openModal() {
-            document.getElementById('modal').style.display = 'block';
-        }
-        function closeModal() {
-            document.getElementById('modal').style.display = 'none';
-        }
-    </script>
-</body>
+        <div id="post">
+            <h1 id="typing" style="font-style: italic; text-align: center"></h1>
+            <br />
+
+            <img
+                style="display: block; justify-self: center"
+                id="pfp"
+                src="https://avatars.githubusercontent.com/u/118633269?v=4"
+                width="200px"
+            />
+
+            <br />
+            <div class="links">
+                <p>
+                    <a
+                        href="https://www.snapchat.com/add/jihadjase"
+                        target="_blank"
+                    >
+                        Snapchat
+                    </a>
+                </p>
+                /
+                <p>
+                    <a href="https://instagram.com/jas_leske" target="_blank"
+                        >Instagram</a
+                    >
+                </p>
+                /
+                <p>
+                    <a
+                        href="https://steamcommunity.com/profiles/76561199416022575/"
+                        target="_blank"
+                        >Steam</a
+                    >
+                </p>
+                /
+                <p>
+                    <a
+                        href="https://discord.com/users/919303630031573022"
+                        target="_blank"
+                        >Discord</a
+                    >
+                </p>
+            </div>
+        </div>
+
+        <audio id="skai">
+            <source src="stacks.mp3" type="audio/mpeg" />
+        </audio>
+    </body>
 </html>
